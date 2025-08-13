@@ -1,14 +1,15 @@
 import React from 'react';
+import SkillCard from './SkillCard';
 
 function CoreCompetencies({ competencies }) {
   return (
     <section id="core-competencies">
       <h3>CORE COMPETENCIES</h3>
-      <ul>
-        {competencies.map((item, index) => (
-          <li key={index}>{item}</li>
+      <div className="skills-grid">
+        {competencies.map((skill, index) => (
+          <SkillCard key={index} skill={skill} />
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
