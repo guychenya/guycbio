@@ -5,7 +5,7 @@ import CoreCompetencies from './components/CoreCompetencies';
 import ProfessionalExperience from './components/ProfessionalExperience';
 import Education from './components/Education';
 import Languages from './components/Languages';
-// No longer importing profilePic, as the placeholder is now a component
+import profilePic from './assets/profile.jpeg'; // Import the new profile picture
 
 function App() {
   const bioData = {
@@ -52,7 +52,7 @@ function App() {
               '<strong>Global Scale Operations:</strong> Managed deployment of standardized quality processes across 80+ sites in North America, Latin America, Europe, and Asia.',
               '<strong>KPI Development:</strong> Created comprehensive metrics dashboard tracking implementation progress, resource utilization, and customer satisfaction across all regions.',
               '<strong>Risk Management:</strong> Implemented structured risk assessment methodology reducing implementation delays by 35% and improving project predictability.',
-              '<strong>Process Optimization:</strong> Redesigned project delivery workflows, a new component that generates an SVG placeholder directly in the code. This is a cleaner approach and avoids any external dependencies. First, I’ll create the `Placeholder.jsx` component. reducing implementation cycle time by 23% while improving quality outcomes.'
+              '<strong>Process Optimization:</strong> Redesigned project delivery workflows, reducing implementation cycle time by 23% while improving quality outcomes.'
             ]
           }
         ]
@@ -93,6 +93,7 @@ function App() {
         name={bioData.name}
         titles={bioData.titles}
         contact={bioData.contact}
+        profilePic={profilePic}
       />
       <main>
         <ExecutiveSummary summary={bioData.summary} />

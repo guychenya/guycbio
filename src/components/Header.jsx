@@ -1,5 +1,4 @@
 import React from 'react';
-import Placeholder from './Placeholder'; // Import the new Placeholder component
 
 const Icon = ({ path, className = 'w-5 h-5' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={className}>
@@ -7,7 +6,7 @@ const Icon = ({ path, className = 'w-5 h-5' }) => (
   </svg>
 );
 
-function Header({ name, titles, contact }) {
+function Header({ name, titles, contact, profilePic }) {
   const icons = {
     location: "M10 2a8 8 0 00-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 00-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z",
     phone: "M2.929 4.929a1 1 0 011.414 0L6 6.586A1 1 0 016 8.001L4.414 9.586a1 1 0 000 1.414l5.586 5.586a1 1 0 001.414 0L13 15.001a1 1 0 011.414 0l1.657 1.657a1 1 0 010 1.414l-1.999 1.999a1 1 0 01-1.414 0a15.025 15.025 0 01-12.02-12.02 1 1 0 010-1.414l1.999-1.999z",
@@ -17,9 +16,7 @@ function Header({ name, titles, contact }) {
 
   return (
     <header>
-      <div className="profile-pic">
-        <Placeholder />
-      </div>
+      <img src={profilePic} alt="Guy Chenya" className="profile-pic" />
       <h1>{name}</h1>
       <h2>{titles.join(' | ')}</h2>
       <div className="contact-info">
