@@ -1,0 +1,136 @@
+body {
+    background-color: #1a2a1a;
+    background-image: 
+        radial-gradient(at 10% 20%, hsla(120,39%,50%,.3) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(120,40%,45%,.2) 0px, transparent 50%),
+        radial-gradient(at 80% 80%, hsla(120,35%,55%,.25) 0px, transparent 50%);
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+#root {
+    max-width: 960px;
+    margin: 0 auto;
+    
+    /* --- Glassmorphism Effect --- */
+    background: rgba(42, 58, 42, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(224, 224, 224, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid rgba(160, 192, 160, 0.3);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* New style for the profile picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(176, 208, 176, 0.5);
+    box-shadow: 0 0 20px rgba(176, 208, 176, 0.3);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.8em;
+    color: #b0d0b0;
+    margin: 0;
+    text-shadow: 0 0 15px rgba(176, 208, 176, 0.4);
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #b0d0b0;
+    margin: 10px 0;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    color: #90b090;
+    display: flex;
+    gap: 15px; /* Space between items */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    justify-content: center;
+}
+
+.contact-info a, .contact-info span {
+    color: #a0c0a0;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.contact-info a:hover {
+    color: #c0e0c0;
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.8em;
+    color: #b0d0b0;
+    border-bottom: 1px solid rgba(160, 192, 160, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: #b0d0b0;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #90b090;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding-left: 5px;
+    margin-bottom: 12px;
+}
+
+strong {
+    color: #b0d0b0;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.job:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
