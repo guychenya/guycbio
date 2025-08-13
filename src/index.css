@@ -86,6 +86,8 @@ header h2 {
 }
 
 .contact-info svg {
+    width: 16px; /* Corrected size */
+    height: 16px; /* Corrected size */
     color: var(--accent-purple);
 }
 
