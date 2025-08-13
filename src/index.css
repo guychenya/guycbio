@@ -1,10 +1,12 @@
+/* --- Steel & Viber (Purple) Theme --- */
+
 body {
-    background-color: #1a2a1a;
+    /* A dark, steely blue/purple background */
+    background-color: #1C1C2E; 
     background-image: 
-        radial-gradient(at 10% 20%, hsla(120,39%,50%,.3) 0px, transparent 50%),
-        radial-gradient(at 80% 0%, hsla(120,40%,45%,.2) 0px, transparent 50%),
-        radial-gradient(at 80% 80%, hsla(120,35%,55%,.25) 0px, transparent 50%);
-    color: #e0e0e0;
+        radial-gradient(at 15% 85%, hsla(255, 30%, 25%, 0.3) 0px, transparent 50%),
+        radial-gradient(at 80% 10%, hsla(255, 35%, 20%, 0.25) 0px, transparent 50%);
+    color: #EAEAEA; /* A soft off-white for text */
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -15,19 +17,17 @@ body {
     max-width: 960px;
     margin: 0 auto;
     
-    /* --- Glassmorphism Effect --- */
-    background: rgba(42, 58, 42, 0.65);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 16px;
-    border: 1px solid rgba(224, 224, 224, 0.18);
+    /* A solid, card-like container, removing glassmorphism */
+    background: #2A2A3D; /* A slightly lighter dark card */
+    border-radius: 12px;
+    border: 1px solid rgba(123, 75, 228, 0.2); /* Subtle purple border */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding: 30px;
 }
 
 header {
     text-align: center;
-    border-bottom: 2px solid rgba(160, 192, 160, 0.3);
+    border-bottom: 2px solid rgba(123, 75, 228, 0.3);
     padding-bottom: 20px;
     margin-bottom: 30px;
     display: flex;
@@ -35,53 +35,58 @@ header {
     align-items: center;
 }
 
-/* New style for the profile picture */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid rgba(176, 208, 176, 0.5);
-    box-shadow: 0 0 20px rgba(176, 208, 176, 0.3);
+    object-fit: cover; /* Ensures the image fits well */
+    border: 3px solid #7B4BE4; /* Main Viber-like purple */
+    box-shadow: 0 0 25px rgba(123, 75, 228, 0.5); /* A vibrant purple glow */
     margin-bottom: 20px;
 }
 
 header h1 {
     font-family: 'Lora', serif;
     font-size: 2.8em;
-    color: #b0d0b0;
+    color: #f0f0f0;
     margin: 0;
-    text-shadow: 0 0 15px rgba(176, 208, 176, 0.4);
+    text-shadow: 0 0 10px rgba(240, 240, 240, 0.2);
 }
 
 header h2 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #b0d0b0;
+    color: #C0B8E0; /* A lighter, softer purple */
     margin: 10px 0;
 }
 
 .contact-info {
     font-size: 0.9em;
-    color: #90b090;
+    color: #A098C0;
     display: flex;
-    gap: 15px; /* Space between items */
+    gap: 15px;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .contact-info a, .contact-info span {
-    color: #a0c0a0;
+    color: #B0A8D0;
     text-decoration: none;
     transition: color 0.3s;
     display: flex;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 8px; /* More space for icons */
 }
 
 .contact-info a:hover {
-    color: #c0e0c0;
-    text-decoration: none;
+    color: #D0C8F0;
+}
+
+.contact-info svg {
+    width: 18px;
+    height: 18px;
+    color: #7B4BE4; /* Make icons pop with the main purple */
 }
 
 section {
@@ -91,22 +96,22 @@ section {
 h3 {
     font-family: 'Lora', serif;
     font-size: 1.8em;
-    color: #b0d0b0;
-    border-bottom: 1px solid rgba(160, 192, 160, 0.3);
+    color: #9370DB; /* Medium Purple for section titles */
+    border-bottom: 1px solid rgba(147, 112, 219, 0.3);
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 h4 {
     font-size: 1.3em;
-    color: #b0d0b0;
+    color: #C0B8E0;
     margin-bottom: 10px;
 }
 
 h5 {
     font-size: 1.1em;
     font-style: italic;
-    color: #90b090;
+    color: #A098C0;
     margin-bottom: 15px;
 }
 
@@ -121,16 +126,18 @@ ul li {
 }
 
 strong {
-    color: #b0d0b0;
+    color: #C0B8E0; /* Softer purple for strong text */
 }
 
 .job {
     margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+    padding: 20px;
+    border-left: 3px solid #7B4BE4; /* A purple accent line */
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s, border-left-color 0.3s;
 }
 
 .job:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-left-color: #9370DB;
 }
