@@ -25,38 +25,24 @@ body {
 }
 
 body[data-theme='light'] {
-    --primary-glow-color: hsla(260, 100%, 50%, 0.3);
+    --primary-glow-color: hsla(39, 100%, 50%, 0.5);
     --border-color: rgba(0, 0, 0, 0.1);
-    --card-background: rgba(255, 255, 255, 0.7);
-    --text-primary: #1a1a2e;
-    --text-secondary: #5a5a7a;
-    --accent-purple: #7c4dff;
-    --accent-pink: #ff4081;
+    --card-background: rgba(255, 250, 240, 0.6); /* Creamy */
+    --text-primary: #3b322c; /* Dark Brown */
+    --text-secondary: #6f5f53; /* Muted Brown */
+    --accent-purple: #a8826a; /* Muted Gold */
+    --accent-pink: #d9a489; /* Soft Peach */
 
-    background-color: #f0f0f8;
+    background-color: #faf8f2; /* Creamy White */
     background-image:
-        linear-gradient(135deg, var(--accent-purple) -20%, transparent 40%),
-        radial-gradient(at 90% 10%, hsla(320, 100%, 90%, 0.8) 0px, transparent 50%),
-        radial-gradient(at 10% 90%, hsla(240, 100%, 90%, 0.8) 0px, transparent 50%);
-    
-    #root {
-        background: rgba(255, 255, 255, 0.4);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    }
+        linear-gradient(135deg, var(--accent-pink) -20%, transparent 40%),
+        radial-gradient(at 90% 10%, hsla(39, 100%, 80%, 0.5) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, hsla(30, 100%, 85%, 0.5) 0px, transparent 50%);
 }
 
-
-    /* Vibrant, futuristic gradient background */
-    background-color: #0b0b1a;
-    background-image: 
-        linear-gradient(135deg, var(--accent-purple) -20%, transparent 40%),
-        radial-gradient(at 90% 10%, hsla(320, 100%, 70%, 0.3) 0px, transparent 50%),
-        radial-gradient(at 10% 90%, hsla(240, 100%, 70%, 0.3) 0px, transparent 50%);
-    color: var(--text-primary);
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 40px 20px;
+body[data-theme='light'] #root {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 #root {
@@ -161,7 +147,7 @@ strong {
 .job:hover, .skill-card:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 85, 165, 0.5);
+    border-color: rgba(217, 164, 137, 0.5); /* Soft Peach Border */
 }
 
 .job {
