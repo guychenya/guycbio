@@ -24,6 +24,41 @@ body {
     padding: 40px 20px;
 }
 
+body[data-theme='light'] {
+    --primary-glow-color: hsla(260, 100%, 50%, 0.3);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --card-background: rgba(255, 255, 255, 0.7);
+    --text-primary: #1a1a2e;
+    --text-secondary: #5a5a7a;
+    --accent-purple: #7c4dff;
+    --accent-pink: #ff4081;
+
+    background-color: #f0f0f8;
+    background-image:
+        linear-gradient(135deg, var(--accent-purple) -20%, transparent 40%),
+        radial-gradient(at 90% 10%, hsla(320, 100%, 90%, 0.8) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, hsla(240, 100%, 90%, 0.8) 0px, transparent 50%);
+    
+    #root {
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+    /* Vibrant, futuristic gradient background */
+    background-color: #0b0b1a;
+    background-image: 
+        linear-gradient(135deg, var(--accent-purple) -20%, transparent 40%),
+        radial-gradient(at 90% 10%, hsla(320, 100%, 70%, 0.3) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, hsla(240, 100%, 70%, 0.3) 0px, transparent 50%);
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
 #root {
     max-width: 960px;
     margin: 0 auto;

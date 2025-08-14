@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Icon = ({ path, className = 'w-5 h-5' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className={className}>
@@ -16,6 +17,7 @@ function Header({ name, titles, contact, profilePic }) {
 
   return (
     <header>
+      <ThemeSwitcher />
       <img src={profilePic} alt="Guy Chenya" className="profile-pic" />
       <h1>{name}</h1>
       <h2>{titles.join(' | ')}</h2>
